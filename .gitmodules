@@ -1,0 +1,6 @@
+[submodule "apps/2025.07/spack"]
+	path = apps/2025.07/spack
+	url = git@github.com:spack/spack.git
+[submodule "core/2025.07/spack"]
+	path = core/2025.07/spack
+	url = git@github.com:spack/spack.git

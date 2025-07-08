@@ -1,0 +1,4 @@
+repos:
+  builtin:
+    git: https://github.com/spack/spack-packages.git
+    destination: /appl/spack/apps/2025.07/packages

@@ -1,0 +1,7 @@
+config:
+  install_tree:
+    root: /appl/spack/core/2025.07/install/${target_family}
+    projections:
+      all: '{compiler.name}-{compiler.version}/{name}-{version}-{hash:6}'
+    build_stage: /tmp/build/spack-stage
+    source_cache: /appl/spack/core/2025.07/source-cache

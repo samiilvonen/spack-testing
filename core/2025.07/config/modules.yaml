@@ -1,0 +1,53 @@
+modules:
+  default:
+    enable::
+      - lmod
+    roots:
+      lmod: /appl/spack/apps/2025.07/modules/${target_family}
+    arch_folder: false
+    lmod:
+      hash_length: 0
+      exclude_implicits: true
+      core_compilers:
+        - gcc@11.4.0
+      hierarchy:
+        - mpi
+      include:
+        - openmpi
+        - gcc@14.2.0
+      exclude:
+        - '%c=llvm'
+        - '%c=gcc'
+      all:
+        autoload: none
+        conflict:
+          - '{name}'
+        environment:
+          set:
+            '{name}_INSTALL_ROOT': '{prefix}'
+  core:
+    enable::
+      - lmod
+    roots:
+      lmod: /appl/spack/core/2025.07/modules/${target_family}
+    arch_folder: false
+    lmod:
+      hash_length: 0
+      exclude_implicits: true
+      core_compilers:
+        - gcc@11.4.0
+      hierarchy:
+        - mpi
+      include:
+        - openmpi
+        - gcc@14.2.0
+      exclude:
+        - '%c=llvm'
+        - '%c=gcc'
+      all:
+        autoload: none
+        conflict:
+          - '{name}'
+        environment:
+          set:
+            '{name}_INSTALL_ROOT': '{prefix}'

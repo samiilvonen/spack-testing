@@ -1,0 +1,5 @@
+upstreams:
+  2025-07-core:
+    install_tree: /appl/spack/core/2025.07/install/${target_family}
+    modules:
+      lmod: /appl/spack/core/2025.07/modules
