@@ -2,7 +2,12 @@ apps/2025.07/bootstrap
 apps/2025.07/install/x86_64
 apps/2025.07/modules/x86_64
 apps/2025.07/packages
+apps/2025.07/environments/**/.spack-env/
 core/2025.07/bootstrap
 core/2025.07/install/x86_64
 core/2025.07/modules
 core/2025.07/packages
+core/2025.07/environments/**/.spack-env/
+v023/
+
+*~
